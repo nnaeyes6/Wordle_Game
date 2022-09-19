@@ -1,10 +1,15 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:wordle_app/widget/wordle_letterbox.dart';
 
-const wordNumsize = 5;
-
 class WordleRow extends StatelessWidget {
-  const WordleRow({super.key});
+  final int wordNumsize;
+
+  const WordleRow({
+    Key? key,
+    required this.wordNumsize,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
